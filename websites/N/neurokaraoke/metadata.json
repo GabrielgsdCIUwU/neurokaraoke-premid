@@ -13,8 +13,8 @@
   "url": "neurokaraoke.com",
   "regExp": "^https?://(www\\.)?neurokaraoke\\.com[/]",
   "version": "1.0.0",
-  "logo": "https://storage.neurokaraoke.com/image/banner/neuro_og.png",
-  "thumbnail": "https://storage.neurokaraoke.com/image/banner/neuro_og.png",
+  "logo": "https://i.imgur.com/KIu8KmD.png",
+  "thumbnail": "https://i.imgur.com/mTo0q3l.png",
   "color": "#ff4081",
   "category": "music",
   "tags": [
@@ -26,5 +26,11 @@
     "neuro",
     "neuro-sama",
     "evil"
+  ],
+  "settings": [
+    {
+      "id": "lang",
+      "multiLanguage": true
+    }
   ]
 }

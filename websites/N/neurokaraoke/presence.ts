@@ -4,7 +4,7 @@ const presence = new Presence({
   clientId: '1462884935441322055',
 })
 
-const DEFAULT_BANNER = 'https://storage.neurokaraoke.com/image/banner/neuro_og.png'
+const DEFAULT_BANNER = 'https://i.imgur.com/mTo0q3l.png'
 let startTimestamp = Math.floor(Date.now() / 1000)
 let lastTitle: string | null = null
 
@@ -33,14 +33,21 @@ presence.on('UpdateData', async () => {
   const isPaused = audioElement.paused
   let coverUrl = coverElement?.src || DEFAULT_BANNER
 
+  const strings = await presence.getStrings({
+    play: 'general.playing',
+    pause: 'general.paused',
+    by: 'general.by',
+    unknown: 'general.unknown'
+  })
+
   const presenceData: PresenceData = {
     type: ActivityType.Listening,
     details: title,
-    state: `by ${artist || 'Unknown Artist'}`,
+    state: `${strings.by} ${artist || strings.unknown}`,
     largeImageKey: coverUrl,
     largeImageText: title,
     smallImageKey: isPaused ? Assets.Pause : Assets.Play,
-    smallImageText: isPaused ? 'Paused' : 'Playing',
+    smallImageText: isPaused ? strings.pause : strings.play,
     startTimestamp
   }
 
