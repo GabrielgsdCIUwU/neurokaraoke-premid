@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.premid.app/metadata/1.16",
+  "apiVersion": 1,
+  "author": {
+    "id": "326957915099627530",
+    "name": "gabrielgsdci"
+  },
+  "service": "neurokaraoke",
+  "description": {
+    "en": "Show your currently playing Neuro-sama and Evil Neuro songs on Discord.",
+    "es": "Muestra en Discord las canciones de Neuro-sama y Evil Neuro que estás reproduciendo actualmente."
+  },
+  "url": "neurokaraoke.com",
+  "regExp": "^https?://(www\\.)?neurokaraoke\\.com[/]",
+  "version": "1.0.0",
+  "logo": "https://storage.neurokaraoke.com/image/banner/neuro_og.png",
+  "thumbnail": "https://storage.neurokaraoke.com/image/banner/neuro_og.png",
+  "color": "#ff4081",
+  "category": "music",
+  "tags": [
+    "music",
+    "karaoke",
+    "audio",
+    "streaming",
+    "sing",
+    "neuro",
+    "neuro-sama",
+    "evil"
+  ]
+}
